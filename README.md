@@ -36,3 +36,33 @@ Vamos a poblar la base de datos...
 'Carl')
 2. a = Animalito.create(color: 'brown', type: 'cat', name:
 'Agustin')
+
+3. a = Animalito.create(color: 'black', type: 'dog', name:
+'Bimbo')
+4. a = Animalito.create(color: 'white', type: 'cat', name:
+'Aurora')
+5. a = Animalito.create(color: 'black & white', type: 'cow',
+name: 'Poli')
+Y para ver todos los animalitos que haz creado puedes poner
+el siguiente comando:
+6. a = Animalito.all
+
+# Si realizaste los pasos, debiera verse mas o menos asi en tu consola:
+
+* 2.5.3 :007 > a = Animalito.all
+Animalito Load (0.8ms) SELECT "animalitos".* FROM
+"animalitos" LIMIT $1 [["LIMIT", 11]]
+=> #<ActiveRecord::Relation [#<Animalito id: 1, color:
+"black", type: "dog", name: "Bimbo", created_at: "2021-02-28
+15:40:51", updated_at: "2021-02-28 15:40:51">, #<Animalito
+id: 2, color: "white", type: "cat", name: "Aurora",
+created_at: "2021-02-28 15:44:23", updated_at: "2021-02-28
+15:44:23">, #<Animalito id: 3, color: "black & white", type:
+"cow", name: "Poli", created_at: "2021-02-28 15:45:29",
+updated_at: "2021-02-28 15:45:29">, #<Animalito id: 4, color:
+"brown", type: "dog", name: "Carl", created_at: "2021-02-28
+15:49:20", updated_at: "2021-02-28 15:49:20">, #<Animalito
+id: 5, color: "brown", type: "cat", name: "Agustin",
+created_at: "2021-02-28 15:49:40", updated_at: "2021-02-28
+15:49:40">]>
+2.5.3 :010 >
