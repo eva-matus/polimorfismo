@@ -67,4 +67,4 @@ created_at: "2021-02-28 15:49:40", updated_at: "2021-02-28
 15:49:40">]>
 2.5.3 :010 >
 
-# No olvides revisar la documentación adjunta detro de este proyecto.
+# No olvides revisar la documentación adjunta dentro de este proyecto.
