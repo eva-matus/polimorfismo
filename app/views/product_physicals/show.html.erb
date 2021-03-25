@@ -1,0 +1,9 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Products:</strong>
+  <%= @product_physical.products %>
+</p>
+
+<%= link_to 'Edit', edit_product_physical_path(@product_physical) %> |
+<%= link_to 'Back', product_physicals_path %>

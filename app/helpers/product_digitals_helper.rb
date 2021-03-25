@@ -1,0 +1,2 @@
+module ProductDigitalsHelper
+end

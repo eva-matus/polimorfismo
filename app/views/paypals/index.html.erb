@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Paypals</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @paypals.each do |paypal| %>
+      <tr>
+        <td><%= link_to 'Show', paypal %></td>
+        <td><%= link_to 'Edit', edit_paypal_path(paypal) %></td>
+        <td><%= link_to 'Destroy', paypal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Paypal', new_paypal_path %>
