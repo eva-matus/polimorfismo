@@ -1,19 +1,21 @@
-# Especificaciones en general:
+### Especificaciones en general:
 
 * Ruby -v 2.5.3
 * Rails -v 5.2.4
 * Active_storage
 * Modelos de formas de pago.
+*********************************************************************************************************************************************************************
 
-# Parte Dos:
+### Parte Dos:
 
-* Partamos por lo básico
-* Qué es el polimorfismo?
-El polimorfismo es la capacidad que tienen los objetos de
+> Partamos por lo básico
+  - Qué es el polimorfismo?
+    - El polimorfismo es la capacidad que tienen los objetos de
 comportarse de una manera diferente a un método(los métodos
 son las funciones que se aplican a los objetos).
 
-# Crearemos la entidad que realice la relación polimórfica:
+*************************************************************************************************************************************************************
+### Crearemos la entidad que realice la relación polimórfica:
 * Y que
 no sea compleja, es por ello que haremos el polimorfismo de
 manera manual.
@@ -32,22 +34,28 @@ obtendrás la clase que necesitas(perro, gato o vaca)
 recuerda ingresar al proyecto antes):
 Vamos a poblar la base de datos...
 
-1. a = Animalito.create(color: 'brown', type: 'dog', name:
+```
+  a = Animalito.create(color: 'brown', type: 'dog', name:
 'Carl')
-2. a = Animalito.create(color: 'brown', type: 'cat', name:
+  
+  a = Animalito.create(color: 'brown', type: 'cat', name:
 'Agustin')
 
-3. a = Animalito.create(color: 'black', type: 'dog', name:
+  a = Animalito.create(color: 'black', type: 'dog', name:
 'Bimbo')
-4. a = Animalito.create(color: 'white', type: 'cat', name:
+ 
+ a = Animalito.create(color: 'white', type: 'cat', name:
 'Aurora')
-5. a = Animalito.create(color: 'black & white', type: 'cow',
+ 
+ a = Animalito.create(color: 'black & white', type: 'cow',
 name: 'Poli')
 Y para ver todos los animalitos que haz creado puedes poner
 el siguiente comando:
-6. a = Animalito.all
+ 
+ a = Animalito.all
+```
 
-# Si realizaste los pasos, debiera verse mas o menos asi en tu consola:
+### Si realizaste los pasos, debiera verse mas o menos asi en tu consola:
 
 * 2.5.3 :007 > a = Animalito.all
 Animalito Load (0.8ms) SELECT "animalitos".* FROM
