@@ -1,10 +1,11 @@
-### Especificaciones en general:
+## Especificaciones en general:
 
 * Ruby -v 2.5.3
 * Rails -v 5.2.4
 * Active_storage
 * Modelos de formas de pago.
-*********************************************************************************************************************************************************************
+* 
+********************************************************************************************************************************************************************
 
 ### Parte Dos:
 
@@ -14,25 +15,32 @@
 comportarse de una manera diferente a un método(los métodos
 son las funciones que se aplican a los objetos).
 
+
 *************************************************************************************************************************************************************
+
+
 ### Crearemos la entidad que realice la relación polimórfica:
-* Y que
-no sea compleja, es por ello que haremos el polimorfismo de
+
+Y que no sea compleja, es por ello que haremos el polimorfismo de
 manera manual.
 
-# Pero como haremos eso?
+#### Pero como haremos eso?
+
 Crearemos la columna type(a type le das un objeto del tipo
 algo), esta nos permitirá manejar el polimorfismo que nos piden
 de manera manual y cumple el mismo funcionamiento, ya que
 cuando ingreses el animal en el formulario que cree para ti,
 obtendrás la clase que necesitas(perro, gato o vaca)
-* Al type le das un objeto del tipo algo.
+ 
+> Al type le das un objeto del tipo algo.
 (En la img adjunta de un diagrama, puedes ver la entidad type).
-* Por favor revisar documentación adjunta en el proyecto: app/parteDos/..
+  - Por favor revisar documentación adjunta en el proyecto: app/parteDos/..
 
-* Jugando en la consola de rails(rails c en tu terminal,
+> Jugando en la consola de rails(rails c en tu terminal,
 recuerda ingresar al proyecto antes):
+
 Vamos a poblar la base de datos...
+
 
 ```
   a = Animalito.create(color: 'brown', type: 'dog', name:
@@ -57,7 +65,8 @@ el siguiente comando:
 
 ### Si realizaste los pasos, debiera verse mas o menos asi en tu consola:
 
-* 2.5.3 :007 > a = Animalito.all
+```
+2.5.3 :007 > a = Animalito.all
 Animalito Load (0.8ms) SELECT "animalitos".* FROM
 "animalitos" LIMIT $1 [["LIMIT", 11]]
 => #<ActiveRecord::Relation [#<Animalito id: 1, color:
@@ -74,5 +83,6 @@ id: 5, color: "brown", type: "cat", name: "Agustin",
 created_at: "2021-02-28 15:49:40", updated_at: "2021-02-28
 15:49:40">]>
 2.5.3 :010 >
+```
 
-# No olvides revisar la documentación adjunta dentro de este proyecto.
+### No olvides revisar la documentación adjunta dentro de este proyecto.
